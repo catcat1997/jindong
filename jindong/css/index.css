@@ -1,0 +1,250 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    font-family: -apple-system, 'Helvetica', sans-serif;
+    /* background-color: rgb(255, 0, 0); */
+    /* background-color: #ccc; */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+.clearfix::after {
+    Content: "";
+    /*after必須寫的*/
+    Display: block;
+    /* 清除浮動必須用塊元素*/
+    Height: 0;
+    /*不可見而且不影響其他元素*/
+    Clear: both;
+    /*清除浮動*/
+    Visibility: hidden;
+    /*不可見而且不影響其他元素*/
+}
+
+img {
+    vertical-align: middle;
+}
+
+.open_app {
+    height: 45px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.open_app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.open_app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.open_app ul li:nth-child(1) img {
+    width: 16px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.open_app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.open_app ul li:nth-child(2) img {
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.open_app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.open_app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #F63515;
+}
+
+.search_wrap {
+    position: fixed;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1080px;
+}
+
+.search_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.search_btn::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png);
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
+.search_login {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 40px;
+    height: 44px;
+    color: white;
+}
+
+.search {
+    height: 30px;
+    background-color: white;
+    margin: 7px 50px 0;
+    border-radius: 15px;
+}
+
+.jd_icon {
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd_icon.png);
+    background-size: 20px 15px;
+    margin: 8px 8px 0 15px;
+}
+
+.jd_icon::after {
+    position: absolute;
+    right: -8px;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.mag_icon {
+    float: left;
+    background: url(../images/jd-sprites.png);
+    width: 18px;
+    height: 15px;
+    background-position: -80px 0;
+    background-size: 200px 200px;
+    margin: 8px 0 0 15px;
+}
+
+.search_text {
+    float: left;
+    width: calc(100% - 85px);
+    height: 20px;
+    margin: 5px 0;
+    border: 0;
+    outline: none;
+    margin-left: 8px;
+    border-radius: 15px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.mid_promo {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.mid_promo div {
+    float: left;
+    width: 33.33%;
+}
+
+.mid_promo div a img {
+    width: 100%;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a img {
+    width: 40px;
+    height: 40px;
+}
+
+nav a span {
+    display: block;
+    color: #666;
+}
+
+.news_flash {
+    width: 100%;
+    clear: both;
+}
+
+.news_flash a {
+    box-sizing: border-box;
+}
+
+.news_flash a img {
+    width: 100%;
+}
+
+.news_flash a:nth-child(1) {
+    float: left;
+    width: 50%;
+}
+
+.news_flash a:nth-child(2) {
+    float: left;
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+.news_flash a:nth-child(3) {
+    float: left;
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
